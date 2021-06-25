@@ -1,7 +1,7 @@
 import { Link, useHistory } from 'react-router-dom';
 import illustrationImg from '../assets/images/illustration.svg';
 import logoImg from '../assets/images/logo.svg';
-import googleIconImg from '../assets/images/google-icon.svg';
+
 import {FormEvent, useState} from 'react';
 import {Button } from '../components/Button';
 import { useAuth } from '../hooks/useAuth';
@@ -11,6 +11,7 @@ export function NewRoom() {
     const {user, signInWithGoogle} = useAuth();
     const history = useHistory();
     const [newRoom, setNewRoom] = useState('');
+    
     async function handleCreateRoom(event: FormEvent) {
         event.preventDefault();
 
@@ -50,7 +51,6 @@ export function NewRoom() {
                     </form>
                     <p>Quer entrar em uma sala existente? <Link to="/">clique aqui</Link> </p>
                 </div>
-
             </main>
         </div>
     )
