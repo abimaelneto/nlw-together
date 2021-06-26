@@ -9,7 +9,6 @@
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-como-executar">Como executar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-licença">Licença</a>
   <a href="#-to-be-done">To Be Done</a>
 </p>
 
@@ -21,7 +20,7 @@
 <br>
 
 <p align="center">
-  <img alt="Happy" src=".github/letmeask.png" width="100%">
+  <img alt="Letmeask print" src=".github/letmeask.png" width="100%">
 </p>
 
 ## ✨ Tecnologias
@@ -44,11 +43,13 @@ Para melhoria da experiência de desenvolvimento:
 
 O Let me Ask é um web app com o objetivo de auxiliar apresentadores e palestrantes a gerenciarem as perguntas que recebem durante um evento ao vivo.
 
-O app permite que os espectadores possam enviar votar(dar like) nas perguntas dos outros e enviar a sua própria.
+O app permite que os espectadores possam votar(dar like) nas perguntas dos outros e enviar a sua própria pergunta.
 
 Dessa forma, o apresentador poderá visualizar quais foram as perguntas mais votadas e dar prioridade nas respostas.
 
 Ele foi desenvolvido na trilha de React do Next Level Week - Together, evento online promovido pela Rocketseat entre 20 e 27 de junho de 2021.
+
+Faça um teste da versão atual [aqui](https://letmeask-ae3a8.web.app/).
 
 ## 🔖 Layout
 
@@ -67,18 +68,27 @@ Você pode visualizar o layout do projeto através [desse link](https://www.figm
 
 Agora você pode acessar [`localhost:3000`](http://localhost:3000) do seu navegador.
 
-## O próximo nível
+## 💡 O próximo nível
 
 ### ESLInt/Prettier
 
-Como a proposta da NLW era que fôssemos além do proposto nas aulas, segui os conselhos do Diego e implementei ESLint e Prettier no ambiente de desenvolvimento.
+Como a proposta da NLW era que fôssemos além do proposto nas aulas, segui os conselhos do Diego e configurei ESLint e Prettier no ambiente de desenvolvimento.
+
 Inicialmente tentei seguir os vídeos da Rocketseat onde o próprio Diego ensina a fazer as configurações. Porém, acredito que devido à evolução das bibliotecas, foi necessário fazer algumas configurações diferentes e silenciar alguns erros(que poderiam ser solucionados com mais tempo, mas por ora não interferem no projeto).
 
 ### PWA
 
 Também segui a ideia de tornar o projeto um PWA(Progressive Web App). Criei e populei os arquivos necessários para isso e também gerei um relatório do Lighthouse (focado em Desktop e PWA) que verificou a "Instalabilidade" do projeto.
 
-# TO BE DONE
+Se você acessar a [versão atual do projeto](https://letmeask-ae3a8.web.app/), poderá verificar que o navegador permite fazer a instalação.
+
+Abaixo um print mostrando o funcionamento local, após instalação.
+
+<p align="center">
+  <img alt="Letmeask como pwa" src=".github/pwa.png" width="100%">
+</p>
+
+# 📓 To be Done
 
 Algumas features do app não puderam ser desenvolvidas, durante a Next Level Week, então deixo aqui registrado o que ainda pode ser melhorado.
 
@@ -97,6 +107,18 @@ Algumas features do app não puderam ser desenvolvidas, durante a Next Level Wee
 
 Seria legal que o usuário pudesse visualizar, por exemplo, as salas já criadas(e talvez até as visitadas) por ele, bem como as perguntas que ele fez(se visitou) e as perguntas mais votadas de cada sala que criou ou visitou.
 
+- _Gerar relatório de perguntas_: durante um evento que utiliza o Letmeask, pode acontecer de existir alguma pergunta muito boa, na opinião do apresentador, mas que não foi muito votada(se foi enviada ao final da apresentação é natural que tenha tido menos tempo de votação).
+
+Seria legal que o apresentador pudesse recuperar de forma fácil todas as perguntas da sala. Assim, ele poderia ver quais foram as últimas perguntas, para buscar alguma interessante, e também dar uma olha com mais calma nas outras, mais antigas.
+
+Vamos imaginar ainda que alguém ou alguma empresa produz conteúdo com certa frequência. Seria legal que esse relatório de perguntas pudesse ser enviado a alguém responsável pelo planejamento de conteúdo, para sentir os interesses da audiência e encontrar oportunidades.
+
+Ainda não defini totalmente, mas esse relatório poderia ser criado na própria plataforma, em uma tela acessada pelo admin, ou baixado em um documento PDF ou excel, ou até enviado por e-mail em algum dos formatos citados. Seria uma feature cuja implementação dependeria de uma UX Research, com certeza.
+
+- _Ranking de palavras_: certamente seria uma funcionalidade mais complicada e não tão essencial à aplicação, mas a ideia é o seguinte: ao final da apresentação, é exibido para o admin e, caso ele permita, para todos, um ranking com as palavras que mais apareceram nas perguntas.
+
+Isso seria útil para observar os interesses da audiência e talvez encontrar insights de conteúdo para os próximos eventos/conteúdos do apresentador.
+
 ---
 
-Feito com ♥ por Abimael Neto
+Feito com ♥ por Abimael Neto, um dos próximos bolsistas da Rocketseat
