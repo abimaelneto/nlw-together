@@ -9,6 +9,7 @@
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-como-executar">Como executar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-o-próximo-nivel">O próximo nível</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-to-be-done">To Be Done</a>
 </p>
 
@@ -103,11 +104,15 @@ Algumas features do app não puderam ser desenvolvidas, durante a Next Level Wee
 
 ## Melhorias mais significativas
 
-- _Histórico do usuário_: A ideia seria criar uma tela da aplicação focada no perfil do usuário. Como o login é relacionado à conta do Google, é possível levantar todo o histórico de uso do app por aquele usuário.
+### _Histórico do usuário_
+
+A ideia seria criar uma tela da aplicação focada no perfil do usuário. Como o login é relacionado à conta do Google, é possível levantar todo o histórico de uso do app por aquele usuário.
 
 Seria legal que o usuário pudesse visualizar, por exemplo, as salas já criadas(e talvez até as visitadas) por ele, bem como as perguntas que ele fez(se visitou) e as perguntas mais votadas de cada sala que criou ou visitou.
 
-- _Gerar relatório de perguntas_: durante um evento que utiliza o Letmeask, pode acontecer de existir alguma pergunta muito boa, na opinião do apresentador, mas que não foi muito votada(se foi enviada ao final da apresentação é natural que tenha tido menos tempo de votação).
+### _Gerar relatório de perguntas_
+
+Durante um evento que utiliza o Letmeask, pode acontecer de existir alguma pergunta muito boa, na opinião do apresentador, mas que não foi muito votada(se foi enviada ao final da apresentação é natural que tenha tido menos tempo de votação).
 
 Seria legal que o apresentador pudesse recuperar de forma fácil todas as perguntas da sala. Assim, ele poderia ver quais foram as últimas perguntas, para buscar alguma interessante, e também dar uma olha com mais calma nas outras, mais antigas.
 
@@ -115,7 +120,9 @@ Vamos imaginar ainda que alguém ou alguma empresa produz conteúdo com certa fr
 
 Ainda não defini totalmente, mas esse relatório poderia ser criado na própria plataforma, em uma tela acessada pelo admin, ou baixado em um documento PDF ou excel, ou até enviado por e-mail em algum dos formatos citados. Seria uma feature cuja implementação dependeria de uma UX Research, com certeza.
 
-- _Ranking de palavras_: certamente seria uma funcionalidade mais complicada e não tão essencial à aplicação, mas a ideia é o seguinte: ao final da apresentação, é exibido para o admin e, caso ele permita, para todos, um ranking com as palavras que mais apareceram nas perguntas.
+### _Ranking de palavras_
+
+Certamente seria uma funcionalidade mais complicada e não tão essencial à aplicação, mas a ideia é o seguinte: ao final da apresentação, é exibido para o admin e, caso ele permita, para todos, um ranking com as palavras que mais apareceram nas perguntas.
 
 Isso seria útil para observar os interesses da audiência e talvez encontrar insights de conteúdo para os próximos eventos/conteúdos do apresentador.
 
