@@ -1,46 +1,102 @@
-# Getting Started with Create React App
+# Sobre o Let me ask
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">
+  <img alt="letmeask" title="letmeask" src=".github/logo.png" />
+</h1>
 
-## Available Scripts
+<p align="center">
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-como-executar">Como executar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-licença">Licença</a>
+  <a href="#-to-be-done">To Be Done</a>
+</p>
 
-In the project directory, you can run:
+<p align="center">
 
-### `yarn start`
+ <img src="https://img.shields.io/static/v1?label=NLW&message=Together&color=8257E5&labelColor=000000" alt="NLW Together" />
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<br>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<p align="center">
+  <img alt="Happy" src=".github/letmeask.png" width="100%">
+</p>
 
-### `yarn test`
+## ✨ Tecnologias
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-### `yarn build`
+- [React](https://reactjs.org)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Firebase](https://firebase.google.com/)
+  - _Authentication_: permite login dos usuários com a conta google
+  - _Realtime Database_: banco NoSQL que armazena as salas, questões e likes do app.
+  - _Firebase Hosting_: hospeda os arquivos estáticos do app(pós build)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Para melhoria da experiência de desenvolvimento:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [ESLint](https://eslint.org)
+- [Prettier](https://prettier.io)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 💻 Projeto
 
-### `yarn eject`
+O Let me Ask é um web app com o objetivo de auxiliar apresentadores e palestrantes a gerenciarem as perguntas que recebem durante um evento ao vivo.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+O app permite que os espectadores possam enviar votar(dar like) nas perguntas dos outros e enviar a sua própria.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Dessa forma, o apresentador poderá visualizar quais foram as perguntas mais votadas e dar prioridade nas respostas.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Ele foi desenvolvido na trilha de React do Next Level Week - Together, evento online promovido pela Rocketseat entre 20 e 27 de junho de 2021.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 🔖 Layout
 
-## Learn More
+Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/file/u0BQK8rCf2KgzcukdRRCWh/Letmeask/duplicate). É necessário ter conta no [Figma](http://figma.com/) para acessá-lo.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🚀 Como executar
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Clone o repositório
+- Crie um projeto do firebase
+- Configure o Authentication do projeto para contas do Google
+- Configure o Realtime Database (em "primeiros passos" se ainda não tiver feito isso)
+- Obtenha suas credenciais do Firebase e substitua no arquivo .env_template, que está na raiz do projeto
+- Configure as regras do Realtime Database utilizando o conteúdo do arquivo firebase-rules
+- Instale as dependências do projeto com `yarn`
+- Inicie o servidor com `yarn start`
+
+Agora você pode acessar [`localhost:3000`](http://localhost:3000) do seu navegador.
+
+## O próximo nível
+
+### ESLInt/Prettier
+
+Como a proposta da NLW era que fôssemos além do proposto nas aulas, segui os conselhos do Diego e implementei ESLint e Prettier no ambiente de desenvolvimento.
+Inicialmente tentei seguir os vídeos da Rocketseat onde o próprio Diego ensina a fazer as configurações. Porém, acredito que devido à evolução das bibliotecas, foi necessário fazer algumas configurações diferentes e silenciar alguns erros(que poderiam ser solucionados com mais tempo, mas por ora não interferem no projeto).
+
+### PWA
+
+Também segui a ideia de tornar o projeto um PWA(Progressive Web App). Criei e populei os arquivos necessários para isso e também gerei um relatório do Lighthouse (focado em Desktop e PWA) que verificou a "Instalabilidade" do projeto.
+
+# TO BE DONE
+
+Algumas features do app não puderam ser desenvolvidas, durante a Next Level Week, então deixo aqui registrado o que ainda pode ser melhorado.
+
+## Design básico do produto
+
+- Imagem e texto mostrando que a sala está vazia e sugerindo compartilhar o código com os amigos(admin) ou fazer perguntas(audiência)
+- Modal de encerramento de sala(admin)
+- Ordenar perguntas pelas mais votadas para ajudar o admin
+- Possibilidade de desfazer ações(marcar como respondida, marcar como destaque e apagar)
+- Deixar sala sem deslogar(todos)
+- Logout(todos)
+
+## Melhorias mais significativas
+
+- _Histórico do usuário_: A ideia seria criar uma tela da aplicação focada no perfil do usuário. Como o login é relacionado à conta do Google, é possível levantar todo o histórico de uso do app por aquele usuário.
+
+Seria legal que o usuário pudesse visualizar, por exemplo, as salas já criadas(e talvez até as visitadas) por ele, bem como as perguntas que ele fez(se visitou) e as perguntas mais votadas de cada sala que criou ou visitou.
+
+---
+
+Feito com ♥ por Abimael Neto

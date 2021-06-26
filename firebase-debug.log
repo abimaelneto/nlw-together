@@ -1,0 +1,135 @@
+[debug] [2021-06-26T14:28:56.686Z] ----------------------------------------------------------------------
+[debug] [2021-06-26T14:28:56.691Z] Command:       /usr/local/bin/node /Users/abimaelneto/.npm-global/bin/firebase deploy
+[debug] [2021-06-26T14:28:56.691Z] CLI Version:   9.14.0
+[debug] [2021-06-26T14:28:56.692Z] Platform:      darwin
+[debug] [2021-06-26T14:28:56.692Z] Node Version:  v14.17.1
+[debug] [2021-06-26T14:28:56.710Z] Time:          Sat Jun 26 2021 11:28:56 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2021-06-26T14:28:56.710Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-06-26T14:28:56.714Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2021-06-26T14:28:56.751Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-06-26T14:28:56.752Z] > authorizing via signed-in user (abimael.oliveiraneto@gmail.com)
+[debug] [2021-06-26T14:28:56.752Z] [iam] checking project letmeask-ae3a8 for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2021-06-26T14:28:56.754Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-06-26T14:28:56.754Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-06-26T14:28:56.994Z] <<< HTTP RESPONSE 200 {"date":"Sat, 26 Jun 2021 14:28:57 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-26T14:28:57.037Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/letmeask-ae3a8:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2021-06-26T14:28:57.383Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2021-06-26T14:28:57.383Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2021-06-26T14:28:58.001Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 26 Jun 2021 14:28:57 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=732","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-26T14:28:58.003Z] > refreshing access token with scopes: []
+[debug] [2021-06-26T14:28:58.003Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-06-26T14:28:58.271Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sat, 26 Jun 2021 14:28:58 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-26T14:28:58.311Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/letmeask-ae3a8 [none]
+[debug] [2021-06-26T14:28:59.366Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/letmeask-ae3a8 200
+[debug] [2021-06-26T14:28:59.366Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/letmeask-ae3a8 {"projectId":"letmeask-ae3a8","projectNumber":"176527142077","displayName":"letmeask","name":"projects/letmeask-ae3a8","resources":{"hostingSite":"letmeask-ae3a8","realtimeDatabaseInstance":"letmeask-ae3a8-default-rtdb"},"state":"ACTIVE"}
+[debug] [2021-06-26T14:28:59.367Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/letmeask-ae3a8 [none]
+[debug] [2021-06-26T14:29:00.480Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/letmeask-ae3a8 200
+[debug] [2021-06-26T14:29:00.481Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/letmeask-ae3a8 {"projectId":"letmeask-ae3a8","projectNumber":"176527142077","displayName":"letmeask","name":"projects/letmeask-ae3a8","resources":{"hostingSite":"letmeask-ae3a8","realtimeDatabaseInstance":"letmeask-ae3a8-default-rtdb"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'letmeask-ae3a8'...
+[info] 
+[info] i  deploying database, hosting 
+[info] i  database: checking rules syntax... 
+[debug] [2021-06-26T14:29:00.489Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-06-26T14:29:00.489Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-06-26T14:29:00.739Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sat, 26 Jun 2021 14:29:00 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-26T14:29:00.779Z] >>> HTTP REQUEST GET https://firebasedatabase.googleapis.com/v1beta/projects/letmeask-ae3a8/locations/-/instances/letmeask-ae3a8-default-rtdb  
+ 
+[debug] [2021-06-26T14:29:02.117Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 26 Jun 2021 14:29:02 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-26T14:29:02.120Z] >>> HTTP REQUEST PUT https://letmeask-ae3a8-default-rtdb.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  "rules": {
+  "rooms": {
+    ".read": false,
+    ".write": false,
+    "$roomId": {
+    ".read": "!root.child('/rooms/' + $roomId + '/endedAt').exists() || data.child('authorId').val() == auth.uid ",
+    ".write": "auth != null && (!data.exists() || data.child('authorId').val() == auth.uid)",
+    "questions": {
+      ".read": "!root.child('/rooms/' + $roomId + '/endedAt').exists()",
+      ".write": false,
+      "$questionId":{
+        ".read": true,
+          ".write": "auth != null && !root.child('/rooms/' + $roomId + '/endedAt').exists() && (!data.exists() || data.child('author/id').val() == auth.uid)",
+        "likes": {
+        ".read": true,
+        ".write": "auth != null"
+        }
+      }
+    }
+    }
+  }
+  }
+}
+
+[debug] [2021-06-26T14:29:02.933Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Sat, 26 Jun 2021 14:29:02 GMT","content-type":"application/json; charset=utf-8","content-length":"15","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[info] ✔  database: rules syntax for database letmeask-ae3a8-default-rtdb is valid 
+[debug] [2021-06-26T14:29:02.940Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/letmeask-ae3a8/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-06-26T14:29:04.573Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 26 Jun 2021 14:29:04 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[letmeask-ae3a8]: beginning deploy... 
+[info] i  hosting[letmeask-ae3a8]: found 18 files in build 
+[debug] [2021-06-26T14:29:05.311Z] > refreshing access token with scopes: []
+[debug] [2021-06-26T14:29:05.311Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-06-26T14:29:05.314Z] [hosting] hash cache [YnVpbGQ] stored for 18 files
+[debug] [2021-06-26T14:29:05.314Z] [hosting][hash queue][FINAL] {"max":698,"min":19,"avg":63.333333333333336,"active":0,"complete":18,"success":18,"errored":0,"retried":0,"total":18,"elapsed":707}
+[debug] [2021-06-26T14:29:05.554Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sat, 26 Jun 2021 14:29:05 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-26T14:29:05.602Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/sites/letmeask-ae3a8/versions/581d56642a2016ed:populateFiles [none]
+[debug] [2021-06-26T14:29:05.602Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/letmeask-ae3a8/versions/581d56642a2016ed:populateFiles {"files":{"/index.html":"fa9a5d2d3c7c027b8819e3817bea2018caea47caa89435cca961225bbd1c4c5c","/asset-manifest.json":"af93031fc61648af7d2fd165ae80f82582ab5a199a25f6c617d40b701d4a8427","/static/css/main.ac31c5f7.chunk.css":"d3d0a84dfb7d7f6eef3e47dd99bf1fb36b321d2e1d43824f12559bf1e19ef410","/static/js/2.82b072e0.chunk.js.LICENSE.txt":"a5a9d5b5d614801bc1e659256140ced1260ae0b6167020a730390b87950cb4a9","/static/css/main.ac31c5f7.chunk.css.map":"7a02f30bb969c9ec036248c7bb1ae7b193e27d461b8e75dbb4d36e98df38a19e","/static/js/runtime-main.8a6d366f.js":"838e0faea7178f24409a8d1bb2ab3f88cd123a2d07e7d14dbf53940bdbc3652c","/static/media/answer.4502a8d5.svg":"41779d2b568f8ee6a47e41223ffb68b9249d75dcb816b4c6ce445ed24fa4ad54","/static/media/check.5dfa6ed6.svg":"4029b8cfc4163e50a76c9130c3e2bb28132255f7e101617d7e8850c57be44e37","/static/media/copy.2f36f99e.svg":"8fda859f7164a15fab9d6203b073c5c3c8f9b6e920e5e0687c26a5c99ea4d03f","/static/media/delete.22ba6e00.svg":"6bc3461ba1078ce9a62fbb0caf96cdcf792ca3cff9d175cf93083a023f7e631b","/static/media/google-icon.df15d8e5.svg":"b4c13b5eda9642fdc33df52d9aca38af7ae4505489883617e7a763cfca465195","/static/media/illustration.ae7276f0.svg":"6559b9923810dba85108596143b448a410f044b79ea39c1be4ef93ce04123aec","/static/media/logo.a88331cb.svg":"2212b145b3c446e7667d8ea51fecda86aad59a7d8a15b4d953f3dfd5fd300442","/static/js/main.2142f8ec.chunk.js":"50808dddf3cd14be2be291f19bee051f9a7790e6fad255cce03aaee78417bd67","/static/js/runtime-main.8a6d366f.js.map":"2832a401b7e56c21b73670d70042ff5db24091eb4cbb7cce907ec4abaf3f1d80","/static/js/main.2142f8ec.chunk.js.map":"6e4014188733b82e75cd9c737c99051ee029e9d963f92527716511f1caa28964","/static/js/2.82b072e0.chunk.js":"f17cdaeba7c3555f15b68a855c1aad84a0794c5ba8923f8b67b2b977d4ed7a92","/static/js/2.82b072e0.chunk.js.map":"395752a8b16636de2225f3a21c58fc71d46709c0c2a4e4c0bf4d58ca84893679"}}
+[debug] [2021-06-26T14:29:06.933Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/sites/letmeask-ae3a8/versions/581d56642a2016ed:populateFiles 200
+[debug] [2021-06-26T14:29:06.933Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/letmeask-ae3a8/versions/581d56642a2016ed:populateFiles {"uploadRequiredHashes":["6e4014188733b82e75cd9c737c99051ee029e9d963f92527716511f1caa28964","2832a401b7e56c21b73670d70042ff5db24091eb4cbb7cce907ec4abaf3f1d80","395752a8b16636de2225f3a21c58fc71d46709c0c2a4e4c0bf4d58ca84893679","838e0faea7178f24409a8d1bb2ab3f88cd123a2d07e7d14dbf53940bdbc3652c","fa9a5d2d3c7c027b8819e3817bea2018caea47caa89435cca961225bbd1c4c5c","af93031fc61648af7d2fd165ae80f82582ab5a199a25f6c617d40b701d4a8427","7a02f30bb969c9ec036248c7bb1ae7b193e27d461b8e75dbb4d36e98df38a19e","50808dddf3cd14be2be291f19bee051f9a7790e6fad255cce03aaee78417bd67","d3d0a84dfb7d7f6eef3e47dd99bf1fb36b321d2e1d43824f12559bf1e19ef410","f17cdaeba7c3555f15b68a855c1aad84a0794c5ba8923f8b67b2b977d4ed7a92"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/letmeask-ae3a8/versions/581d56642a2016ed/files"}
+[debug] [2021-06-26T14:29:06.939Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/letmeask-ae3a8/versions/581d56642a2016ed/files/6e4014188733b82e75cd9c737c99051ee029e9d963f92527716511f1caa28964 [none]
+[debug] [2021-06-26T14:29:06.939Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/letmeask-ae3a8/versions/581d56642a2016ed/files/6e4014188733b82e75cd9c737c99051ee029e9d963f92527716511f1caa28964 [stream]
+[debug] [2021-06-26T14:29:06.941Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/letmeask-ae3a8/versions/581d56642a2016ed/files/2832a401b7e56c21b73670d70042ff5db24091eb4cbb7cce907ec4abaf3f1d80 [none]
+[debug] [2021-06-26T14:29:06.941Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/letmeask-ae3a8/versions/581d56642a2016ed/files/2832a401b7e56c21b73670d70042ff5db24091eb4cbb7cce907ec4abaf3f1d80 [stream]
+[debug] [2021-06-26T14:29:06.943Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/letmeask-ae3a8/versions/581d56642a2016ed/files/395752a8b16636de2225f3a21c58fc71d46709c0c2a4e4c0bf4d58ca84893679 [none]
+[debug] [2021-06-26T14:29:06.943Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/letmeask-ae3a8/versions/581d56642a2016ed/files/395752a8b16636de2225f3a21c58fc71d46709c0c2a4e4c0bf4d58ca84893679 [stream]
+[debug] [2021-06-26T14:29:06.944Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/letmeask-ae3a8/versions/581d56642a2016ed/files/838e0faea7178f24409a8d1bb2ab3f88cd123a2d07e7d14dbf53940bdbc3652c [none]
+[debug] [2021-06-26T14:29:06.944Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/letmeask-ae3a8/versions/581d56642a2016ed/files/838e0faea7178f24409a8d1bb2ab3f88cd123a2d07e7d14dbf53940bdbc3652c [stream]
+[debug] [2021-06-26T14:29:06.945Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/letmeask-ae3a8/versions/581d56642a2016ed/files/fa9a5d2d3c7c027b8819e3817bea2018caea47caa89435cca961225bbd1c4c5c [none]
+[debug] [2021-06-26T14:29:06.946Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/letmeask-ae3a8/versions/581d56642a2016ed/files/fa9a5d2d3c7c027b8819e3817bea2018caea47caa89435cca961225bbd1c4c5c [stream]
+[debug] [2021-06-26T14:29:06.949Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/letmeask-ae3a8/versions/581d56642a2016ed/files/af93031fc61648af7d2fd165ae80f82582ab5a199a25f6c617d40b701d4a8427 [none]
+[debug] [2021-06-26T14:29:06.950Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/letmeask-ae3a8/versions/581d56642a2016ed/files/af93031fc61648af7d2fd165ae80f82582ab5a199a25f6c617d40b701d4a8427 [stream]
+[debug] [2021-06-26T14:29:06.950Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/letmeask-ae3a8/versions/581d56642a2016ed/files/7a02f30bb969c9ec036248c7bb1ae7b193e27d461b8e75dbb4d36e98df38a19e [none]
+[debug] [2021-06-26T14:29:06.950Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/letmeask-ae3a8/versions/581d56642a2016ed/files/7a02f30bb969c9ec036248c7bb1ae7b193e27d461b8e75dbb4d36e98df38a19e [stream]
+[debug] [2021-06-26T14:29:06.951Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/letmeask-ae3a8/versions/581d56642a2016ed/files/50808dddf3cd14be2be291f19bee051f9a7790e6fad255cce03aaee78417bd67 [none]
+[debug] [2021-06-26T14:29:06.951Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/letmeask-ae3a8/versions/581d56642a2016ed/files/50808dddf3cd14be2be291f19bee051f9a7790e6fad255cce03aaee78417bd67 [stream]
+[debug] [2021-06-26T14:29:06.952Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/letmeask-ae3a8/versions/581d56642a2016ed/files/d3d0a84dfb7d7f6eef3e47dd99bf1fb36b321d2e1d43824f12559bf1e19ef410 [none]
+[debug] [2021-06-26T14:29:06.952Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/letmeask-ae3a8/versions/581d56642a2016ed/files/d3d0a84dfb7d7f6eef3e47dd99bf1fb36b321d2e1d43824f12559bf1e19ef410 [stream]
+[debug] [2021-06-26T14:29:06.953Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/letmeask-ae3a8/versions/581d56642a2016ed/files/f17cdaeba7c3555f15b68a855c1aad84a0794c5ba8923f8b67b2b977d4ed7a92 [none]
+[debug] [2021-06-26T14:29:06.953Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/letmeask-ae3a8/versions/581d56642a2016ed/files/f17cdaeba7c3555f15b68a855c1aad84a0794c5ba8923f8b67b2b977d4ed7a92 [stream]
+[debug] [2021-06-26T14:29:06.954Z] [hosting][populate queue][FINAL] {"max":1629,"min":1629,"avg":1629,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1644}
+[debug] [2021-06-26T14:29:06.954Z] [hosting] uploads queued: 10
+[debug] [2021-06-26T14:29:08.865Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/letmeask-ae3a8/versions/581d56642a2016ed/files/af93031fc61648af7d2fd165ae80f82582ab5a199a25f6c617d40b701d4a8427 200
+[debug] [2021-06-26T14:29:08.868Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/letmeask-ae3a8/versions/581d56642a2016ed/files/af93031fc61648af7d2fd165ae80f82582ab5a199a25f6c617d40b701d4a8427 [stream]
+[debug] [2021-06-26T14:29:09.285Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/letmeask-ae3a8/versions/581d56642a2016ed/files/6e4014188733b82e75cd9c737c99051ee029e9d963f92527716511f1caa28964 200
+[debug] [2021-06-26T14:29:09.286Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/letmeask-ae3a8/versions/581d56642a2016ed/files/6e4014188733b82e75cd9c737c99051ee029e9d963f92527716511f1caa28964 [stream]
+[debug] [2021-06-26T14:29:09.466Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/letmeask-ae3a8/versions/581d56642a2016ed/files/2832a401b7e56c21b73670d70042ff5db24091eb4cbb7cce907ec4abaf3f1d80 200
+[debug] [2021-06-26T14:29:09.467Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/letmeask-ae3a8/versions/581d56642a2016ed/files/2832a401b7e56c21b73670d70042ff5db24091eb4cbb7cce907ec4abaf3f1d80 [stream]
+[debug] [2021-06-26T14:29:09.531Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/letmeask-ae3a8/versions/581d56642a2016ed/files/838e0faea7178f24409a8d1bb2ab3f88cd123a2d07e7d14dbf53940bdbc3652c 200
+[debug] [2021-06-26T14:29:09.532Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/letmeask-ae3a8/versions/581d56642a2016ed/files/838e0faea7178f24409a8d1bb2ab3f88cd123a2d07e7d14dbf53940bdbc3652c [stream]
+[debug] [2021-06-26T14:29:09.579Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/letmeask-ae3a8/versions/581d56642a2016ed/files/7a02f30bb969c9ec036248c7bb1ae7b193e27d461b8e75dbb4d36e98df38a19e 200
+[debug] [2021-06-26T14:29:09.579Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/letmeask-ae3a8/versions/581d56642a2016ed/files/7a02f30bb969c9ec036248c7bb1ae7b193e27d461b8e75dbb4d36e98df38a19e [stream]
+[debug] [2021-06-26T14:29:09.648Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/letmeask-ae3a8/versions/581d56642a2016ed/files/395752a8b16636de2225f3a21c58fc71d46709c0c2a4e4c0bf4d58ca84893679 200
+[debug] [2021-06-26T14:29:09.649Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/letmeask-ae3a8/versions/581d56642a2016ed/files/395752a8b16636de2225f3a21c58fc71d46709c0c2a4e4c0bf4d58ca84893679 [stream]
+[debug] [2021-06-26T14:29:09.651Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/letmeask-ae3a8/versions/581d56642a2016ed/files/d3d0a84dfb7d7f6eef3e47dd99bf1fb36b321d2e1d43824f12559bf1e19ef410 200
+[debug] [2021-06-26T14:29:09.651Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/letmeask-ae3a8/versions/581d56642a2016ed/files/d3d0a84dfb7d7f6eef3e47dd99bf1fb36b321d2e1d43824f12559bf1e19ef410 [stream]
+[debug] [2021-06-26T14:29:09.674Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/letmeask-ae3a8/versions/581d56642a2016ed/files/fa9a5d2d3c7c027b8819e3817bea2018caea47caa89435cca961225bbd1c4c5c 200
+[debug] [2021-06-26T14:29:09.674Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/letmeask-ae3a8/versions/581d56642a2016ed/files/fa9a5d2d3c7c027b8819e3817bea2018caea47caa89435cca961225bbd1c4c5c [stream]
+[debug] [2021-06-26T14:29:09.716Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/letmeask-ae3a8/versions/581d56642a2016ed/files/50808dddf3cd14be2be291f19bee051f9a7790e6fad255cce03aaee78417bd67 200
+[debug] [2021-06-26T14:29:09.716Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/letmeask-ae3a8/versions/581d56642a2016ed/files/50808dddf3cd14be2be291f19bee051f9a7790e6fad255cce03aaee78417bd67 [stream]
+[debug] [2021-06-26T14:29:09.838Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/letmeask-ae3a8/versions/581d56642a2016ed/files/f17cdaeba7c3555f15b68a855c1aad84a0794c5ba8923f8b67b2b977d4ed7a92 200
+[debug] [2021-06-26T14:29:09.838Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/letmeask-ae3a8/versions/581d56642a2016ed/files/f17cdaeba7c3555f15b68a855c1aad84a0794c5ba8923f8b67b2b977d4ed7a92 [stream]
+[debug] [2021-06-26T14:29:09.838Z] [hosting][upload queue][FINAL] {"max":2900,"min":1931,"avg":2589.7,"active":0,"complete":10,"success":10,"errored":0,"retried":0,"total":10,"elapsed":2904}
+[info] ✔  hosting[letmeask-ae3a8]: file upload complete 
+[debug] [2021-06-26T14:29:09.839Z] [hosting] deploy completed after 5264ms
+[info] i  database: releasing rules... 
+[debug] [2021-06-26T14:29:09.847Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-06-26T14:29:09.847Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
