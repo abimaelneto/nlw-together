@@ -63,7 +63,7 @@ Você pode visualizar o layout do projeto através [desse link](https://www.figm
 - Configure o Authentication do projeto para contas do Google
 - Configure o Realtime Database (em "primeiros passos" se ainda não tiver feito isso)
 - Obtenha suas credenciais do Firebase e substitua no arquivo .env_template, que está na raiz do projeto
-- Configure as regras do Realtime Database utilizando o conteúdo do arquivo firebase-rules
+- Configure as regras do Realtime Database utilizando o conteúdo do arquivo database.rules.json.
 - Instale as dependências do projeto com `yarn`
 - Inicie o servidor com `yarn start`
 
